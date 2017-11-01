@@ -5,7 +5,7 @@
 This document describe the "basic" configuration of a new server using both "classical" approach and Docker approach.
 
 ## Creation of a new user
-ssh-keygen -R hostname -> To configure !!
+
 ```bash
 adduser newuser
 ls -l /home/newuser

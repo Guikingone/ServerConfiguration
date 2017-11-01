@@ -1,5 +1,5 @@
 # Server configuration (Cloud included)
 
-[Google Cloud]('google_cloud.md')
+[Google Cloud](google_cloud.md)
 
-[AWS]('')
+[AWS](aws.md)
