@@ -5,7 +5,7 @@
 This document describe the "basic" configuration of a new server using both "classical" approach and Docker approach.
 
 ## Creation of a new user
-
+ssh-keygen -R hostname -> To configure !!
 ```bash
 adduser newuser
 ls -l /home/newuser
@@ -202,7 +202,7 @@ apt-get install docker-ce -y
 docker run hello-world
 ```
 
-You should see something similar : 
+You should see something similar :
 
 ```bash
 Unable to find image 'hello-world:latest' locally
