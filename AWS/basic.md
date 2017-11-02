@@ -7,7 +7,7 @@ This configuration is build for simple application who need to be fast while man
 First, create a simple 3 node instance :
 
 ```bash
-aws ec2 run-instances --image-id _imageIdentifier_ --count _count_ --instance-type t2.micro --iam-instance-profile Name=ecsInstanceRole --key-name _sshKeysName_ --security-group-ids _securityGroup_
+aws ec2 run-instances --image-id _amiImageIdentifier_ --count _count_ --instance-type t2.micro --iam-instance-profile Name=_ecsRoleCreated_ --key-name _sshKeysName_ --security-group-ids _securityGroup_
 ```
 
 If we need to list the instances launched linked to a cluster :

@@ -36,6 +36,12 @@ If needed, we can delete them :
 aws ec2 delete-key-pairs --key-name _nameDesired_
 ```
 
+#### Create an AMI Role
+
+Fist, create a new role :
+
+
+
 ## Amazon EC2 Container Service
 
 This part describe the basics commands and options available using the CLI.
