@@ -10,6 +10,32 @@ First, create a new security group :
 aws ec2 create-security-group --group-name _groupname_ --description 'Description of the Group'
 ```
 
+#### Create an SSH key pair
+
+First, use the ec2 shortcut :
+
+```bash
+aws ec2 create-key-pair --key-name _nameDesired_ --query 'KeyMaterial' --output text > ~ /.ssh/aws-keys.pem
+```
+
+Then limit the access :
+
+```bash
+chmod 400 ~/.ssh/aws-keys.pem
+```
+
+Verify that the keys are valids :
+
+```bash
+aws ec2 describe-key-pairs --key-name _nameDesired_
+```
+
+If needed, we can delete them :
+
+```bash
+aws ec2 delete-key-pairs --key-name _nameDesired_
+```
+
 ## Amazon EC2 Container Service
 
 This part describe the basics commands and options available using the CLI.

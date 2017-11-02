@@ -2,12 +2,12 @@
 
 This configuration is build for simple application who need to be fast while managing small amount of data.
 
-### EC2
+## EC2
 
 First, create a simple 3 node instance :
 
 ```bash
-aws ec2 run-instances --image-id _imageIdentifier_ --count _count_ --instance-type t2.micro --iam-instance-profile Name=ecsInstanceRole --key-name _sshKeysName_ --security-group-ids _securityGroup_ --user-data _userDataFile_
+aws ec2 run-instances --image-id _imageIdentifier_ --count _count_ --instance-type t2.micro --iam-instance-profile Name=ecsInstanceRole --key-name _sshKeysName_ --security-group-ids _securityGroup_
 ```
 
 If we need to list the instances launched linked to a cluster :
@@ -16,7 +16,7 @@ If we need to list the instances launched linked to a cluster :
 aws ecs list-container-instances --cluster _clusterName_
 ```
 
-### RDS PostgreSQL
+## RDS PostgreSQL
 
 First, create a simple RDS PostgreSQL instance :
 
@@ -42,7 +42,7 @@ If needed, we can delete the instance :
 aws rds delete-db-instance --db-instance-identifier _instanceName_ --skip-final-snapshot
 ```
 
-### ElastiCache
+## ElastiCache
 
 First, create a simple Redis cache instance :
 
