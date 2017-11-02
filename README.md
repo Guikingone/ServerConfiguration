@@ -1,4 +1,6 @@
-# Server configuration (Cloud included)
+# Server configuration
+
+## Cloud configuration
 
 [Google Cloud](google_cloud.md)
 

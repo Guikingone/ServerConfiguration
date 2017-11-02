@@ -2,6 +2,14 @@
 
 ## Security configuration (IAM)
 
+### Security
+
+First, create a new security group :
+
+```bash
+aws ec2 create-security-group --group-name _groupname_ --description 'Description of the Group'
+```
+
 ## Amazon EC2 Container Service
 
 This part describe the basics commands and options available using the CLI.
