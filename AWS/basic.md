@@ -2,6 +2,22 @@
 
 This configuration is build for simple application who need to be fast while managing small amount of data.
 
+## S3 Bucket
+
+First, we need to create a new bucket to store the project files :
+
+```bash
+aws s3api create-bucket --bucket bucket --region eu-central-1 --create-bucket-configuration LocationConstraint=eu-central-1
+```
+
+**__Note tha the --create-bucket-configuration option is mandatory outside of the us-east-1 region__**
+
+Once created, the bucket is available at the address :
+
+```text
+http://bucket.s3.amazonaws.com/
+```
+
 ## EC2
 
 First, create a simple 3 node instance :
